@@ -1,0 +1,46 @@
+<!-- <ac-map id="main-map"> -->
+  <!-- <ac-map-layer-provider [provider]="MapLayerProviderOptions.OpenStreetMap"
+    [options]="{
+    url : 'https://a.tile.openstreetmap.org/'
+    }">
+  </ac-map-layer-provider>
+  <ac-layer acFor="let plane of planes$" [show]="true" [context]="this"
+    [store]="true">
+    <ac-billboard-desc props="{
+      position: plane.position,
+      image: plane.image,
+      name: plane.text,
+      rotation: plane.rotation
+      }"></ac-billboard-desc>
+  </ac-layer> -->
+
+<!-- </ac-map> -->
+
+<!--
+<ac-map id="main-map">
+    <ac-map-layer-provider [provider]="MapLayerProviderOptions.OpenStreetMap" [options]="{
+                  url : 'https://a.tile.openstreetmap.org/'
+           }">
+    </ac-map-layer-provider>
+    <ac-layer  acFor="let track of  planes$" [context]="this" [store]="true">
+      <ac-billboard-desc props="{
+          image: '/assets/plane.png',
+          position: track.position ,
+          name: track.text,
+          rotation: track.rotation
+        }">
+      </ac-billboard-desc>
+      <ac-label-primitive-desc  props="{
+        position: track.position,
+        pixelOffset : [-15,25] | pixelOffset,
+        text: track.text,
+        font: '30px sans-serif',
+        scale: 0.5,
+        fillColor: Cesium.Color.BLACK
+    }">
+    </ac-label-primitive-desc>
+    </ac-layer>
+  </ac-map> -->
+
+
+  <ac-map></ac-map>
